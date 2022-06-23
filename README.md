@@ -1,2 +1,0 @@
-# Aniwae
-Watch Anime!
