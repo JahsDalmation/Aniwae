@@ -1,6 +1,7 @@
 # Welcome to aniwae!
 # V3
 # What to watch?
+
 import subprocess
 
 local_anime = ['baki-2018', 'jujutsu-kaisen', 'mushoku-tensei']
@@ -20,8 +21,8 @@ def hello():
 Hello = True
 
 while Hello == True:
-    source = input('[l]ocal\n[e]xternal\n[q]uit\n> ') 
-    if source != 'l' and source != 'e' and source != 'q':
+    source = input('[l]ocal\n[e]xternal\n[r]ename\n[q]uit\n> ') 
+    if source != 'l' and source != 'e' and source != 'q' and source != 'r':
         print('Try again.\n') 
     if source == 'l':
         print('')
@@ -30,6 +31,8 @@ while Hello == True:
         Name = local_anime[int(X)]
         Ep = input('\n[Ep] > ')        
         anime_player(Name, int(Ep))
+    if source == 'r':
+        subprocess.run(['python ./rename.py'], shell=True)
     if source == 'q':
         Hello = False
 
