@@ -1,8 +1,6 @@
 ### Welcome to Aniwae! 
 ## Version 1
 
-## Aniwae?
-
 # Aniwae is a program that allows users to watch and/or download anime!
 # The content can be played from local or external sources.
 # Aniwae prioritizes quality > speed, however both are priorities.
