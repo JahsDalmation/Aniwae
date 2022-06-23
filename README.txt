@@ -1,5 +1,5 @@
 ### Welcome to Aniwae! 
-## Version 1
+## Anime with Python!
 
 # Aniwae is a program that allows users to watch and/or download anime!
 # The content can be played from local or external sources.
