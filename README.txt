@@ -1,8 +1,6 @@
 ### Welcome to Aniwae! 
 ## Version 1
 
-# Verbose! Can be run as a program but is best suited for documentation
-
 ## Aniwae?
 
 # Aniwae is a program that allows users to watch and/or download anime!
