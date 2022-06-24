@@ -4,16 +4,16 @@ from sys import argv
 import os
 import subprocess
 
-script, Name, Episode = argv
+script, Name, Season, Episode = argv
 
-def anime(name, episode):
-    play_anime = '~/Anime/%s/%s.mp4' % (name, episode)
+def anime(name, Season, episode):
+    play_anime = '~/Anime/%s/s%s/%s.mp4' % (name, Season, episode)
     subprocess.run(['mpv %s' % play_anime], shell=True)
 
 Watch = True
 
 while Watch == True:
-    anime(Name, Episode)
+    anime(Name, Season, Episode)
     Controls = True
     while Controls == True:
         control = input('\n[ 1] > +1 Ep\n[-1] > -1 Ep\n[ r] > Restart\n[ q] > Exit\n> ')
