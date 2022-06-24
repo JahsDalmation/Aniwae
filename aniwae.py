@@ -32,7 +32,14 @@ while Hello == True:
         Ep = input('\n[Ep] > ')        
         anime_player(Name, int(Ep))
     if source == 'r':
-        subprocess.run(['python ./rename.py'], shell=True)
+        print('\nPlease choose title:')
+        local_anime_titles()
+        Y = input('[ ]> ')
+        Anime = local_anime[int(Y)]
+        subprocess.run(['ls -1a ~/Anime/%s/' % Name], shell=True)
+        File_format = input('File Format, upto first episode digit > ')
+        Episodes = int(input("Episodes (no leading 0's) > "))
+        subprocess.run(['python ./rename.py %s %s %s' % (Anime, File_format, Episodes)], shell=True)
     if source == 'q':
         Hello = False
 

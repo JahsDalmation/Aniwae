@@ -1,8 +1,11 @@
+from sys import argv
 import subprocess
 
-Anime = input('Anime > ')
-File_format = input('File Format, upto first episode digit > ')
-Episodes = int(input("Episodes (no leading 0's > "))
+Anime, File_format, Episodes = argv
+
+#Anime = input('Anime > ')
+#File_format = input('File Format, upto first episode digit > ')
+#Episodes = int(input("Episodes (no leading 0's > "))
 
 Ep = 1
 
